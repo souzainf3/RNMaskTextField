@@ -29,6 +29,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="textMask" value="##-####-#####"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="32O-qK-Gax"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbR-Rb-sf6">
                                 <rect key="frame" x="72" y="109" width="232" height="30"/>
@@ -36,7 +39,7 @@
                                     <constraint firstAttribute="width" constant="232" id="q99-Tk-dYW"/>
                                     <constraint firstAttribute="height" constant="30" id="sqS-Zb-V2u"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Show Message Error"/>
                                 <connections>
                                     <action selector="showError:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6xc-k0-PjX"/>
                                 </connections>
@@ -49,6 +52,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="textMask" value="##-####-#####"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="gOh-G6-GLI"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>

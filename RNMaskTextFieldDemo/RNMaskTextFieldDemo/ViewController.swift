@@ -28,3 +28,10 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: UITextFieldDelegate {
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        return (textField as? MaskTextField)?.shouldChangeCharacters(in: range, replacementString: string) ?? true
+    }
+}
+
