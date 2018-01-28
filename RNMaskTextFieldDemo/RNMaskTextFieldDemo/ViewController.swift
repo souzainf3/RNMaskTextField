@@ -25,6 +25,8 @@ class ViewController: UIViewController {
 
     @IBAction func showError(_ sender: Any) {
         self.textField.showAccessoryLabel(withText: "Message Error")
+        
+        self.textField.textMask = "###.###"
     }
 }
 
