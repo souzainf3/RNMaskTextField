@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  MaskTextField
+//  RNMaskTextFieldDemo
 //
 //  Created by Romilson Nunes on 28/01/18.
 //  Copyright © 2018 Romilson Nunes. All rights reserved.

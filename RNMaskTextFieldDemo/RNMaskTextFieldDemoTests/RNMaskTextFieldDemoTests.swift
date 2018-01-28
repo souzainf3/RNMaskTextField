@@ -1,15 +1,15 @@
 //
-//  MaskTextFieldTests.swift
-//  MaskTextFieldTests
+//  RNMaskTextFieldDemoTests.swift
+//  RNMaskTextFieldDemoTests
 //
 //  Created by Romilson Nunes on 28/01/18.
 //  Copyright © 2018 Romilson Nunes. All rights reserved.
 //
 
 import XCTest
-@testable import MaskTextField
+@testable import RNMaskTextFieldDemo
 
-class MaskTextFieldTests: XCTestCase {
+class RNMaskTextFieldDemoTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
