@@ -1,10 +1,8 @@
 # RNMaskTextField
+> It is a subclass of UITextfield to Provide the mask and message error label.
 
-It is a subclass of UITextfield to Provide the mask and message error label.
 
-
-Image preview
-[![](https://raw.githubusercontent.com/souzainf3/RNMaskTextField/master/RNMaskTextFieldDemo/Screens/screen1.png)]
+![](RNMaskTextFieldDemo/Screens/screen1.png)
 
 
 ## Requirements
@@ -44,7 +42,7 @@ self.textField.textMask = "###.###"
 extension ObjectObserver: UITextFieldDelegate {
 
 func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-return (textField as! MaskTextField).shouldChangeCharacters(in: range, replacementString: string) true
+return (textField as! MaskTextField).shouldChangeCharacters(in: range, replacementString: string)
 }
 }
 
@@ -72,9 +70,9 @@ textEdgeInsets: UIEdgeInsets
 ```swift
 accessoryFont: UIFont
 ```
-*Accessory Text Color
+*Accessory Text Color. Default is .red
 ```swift
-accessoryTextColor
+accessoryTextColor: UIColor
 ```
 * Shake AccessoryLabel when Showing text. Default is true
 ```swift
