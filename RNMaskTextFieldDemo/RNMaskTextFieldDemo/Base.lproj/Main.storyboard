@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cXj-Ff-my9" customClass="FormTextField" customModule="RNMaskTextFieldDemo" customModuleProvider="target">
-                                <rect key="frame" x="16" y="20" width="343" height="30"/>
+                                <rect key="frame" x="16" y="60" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="bnz-Xk-i6A"/>
                                 </constraints>
@@ -34,7 +34,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbR-Rb-sf6">
-                                <rect key="frame" x="72" y="109" width="232" height="30"/>
+                                <rect key="frame" x="72" y="149" width="232" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="232" id="q99-Tk-dYW"/>
                                     <constraint firstAttribute="height" constant="30" id="sqS-Zb-V2u"/>
@@ -45,7 +45,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qrb-Da-NWr" customClass="FormTextField" customModule="RNMaskTextFieldDemo" customModuleProvider="target">
-                                <rect key="frame" x="16" y="58" width="343" height="30"/>
+                                <rect key="frame" x="16" y="98" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -66,7 +66,7 @@
                             <constraint firstItem="qrb-Da-NWr" firstAttribute="top" secondItem="cXj-Ff-my9" secondAttribute="bottom" constant="8" id="bUp-hu-CmP"/>
                             <constraint firstItem="cXj-Ff-my9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="c4b-Te-ggV"/>
                             <constraint firstItem="nbR-Rb-sf6" firstAttribute="top" secondItem="qrb-Da-NWr" secondAttribute="bottom" constant="21" id="cic-NK-hJV"/>
-                            <constraint firstItem="cXj-Ff-my9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nb3-HA-94L"/>
+                            <constraint firstItem="cXj-Ff-my9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="nb3-HA-94L"/>
                             <constraint firstItem="qrb-Da-NWr" firstAttribute="trailing" secondItem="cXj-Ff-my9" secondAttribute="trailing" id="qHX-fK-v9v"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
