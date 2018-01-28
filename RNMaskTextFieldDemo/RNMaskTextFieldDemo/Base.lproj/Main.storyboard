@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,65 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RNMaskTextFieldDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cXj-Ff-my9" customClass="FormTextField" customModule="RNMaskTextFieldDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="bnz-Xk-i6A"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textMask" value="##-####-#####"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbR-Rb-sf6">
+                                <rect key="frame" x="72" y="109" width="232" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="232" id="q99-Tk-dYW"/>
+                                    <constraint firstAttribute="height" constant="30" id="sqS-Zb-V2u"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="showError:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6xc-k0-PjX"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qrb-Da-NWr" customClass="FormTextField" customModule="RNMaskTextFieldDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="58" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textMask" value="##-####-#####"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qrb-Da-NWr" firstAttribute="height" secondItem="cXj-Ff-my9" secondAttribute="height" id="2pd-4H-8Tt"/>
+                            <constraint firstItem="qrb-Da-NWr" firstAttribute="leading" secondItem="cXj-Ff-my9" secondAttribute="leading" id="I8R-ZS-Whs"/>
+                            <constraint firstItem="nbR-Rb-sf6" firstAttribute="centerX" secondItem="qrb-Da-NWr" secondAttribute="centerX" id="L5G-67-BeK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cXj-Ff-my9" secondAttribute="trailing" constant="16" id="Ohb-TP-74o"/>
+                            <constraint firstItem="qrb-Da-NWr" firstAttribute="top" secondItem="cXj-Ff-my9" secondAttribute="bottom" constant="8" id="bUp-hu-CmP"/>
+                            <constraint firstItem="cXj-Ff-my9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="c4b-Te-ggV"/>
+                            <constraint firstItem="nbR-Rb-sf6" firstAttribute="top" secondItem="qrb-Da-NWr" secondAttribute="bottom" constant="21" id="cic-NK-hJV"/>
+                            <constraint firstItem="cXj-Ff-my9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nb3-HA-94L"/>
+                            <constraint firstItem="qrb-Da-NWr" firstAttribute="trailing" secondItem="cXj-Ff-my9" secondAttribute="trailing" id="qHX-fK-v9v"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="cXj-Ff-my9" id="N46-5P-DeK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

@@ -14,6 +14,8 @@
 		03461993201E7088009E85EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03461991201E7088009E85EF /* LaunchScreen.storyboard */; };
 		0346199E201E7088009E85EF /* RNMaskTextFieldDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0346199D201E7088009E85EF /* RNMaskTextFieldDemoTests.swift */; };
 		034619A9201E7088009E85EF /* RNMaskTextFieldDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034619A8201E7088009E85EF /* RNMaskTextFieldDemoUITests.swift */; };
+		034619B9201E70B5009E85EF /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034619B7201E70B5009E85EF /* FormTextField.swift */; };
+		034619BA201E70B5009E85EF /* MaskTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034619B8201E70B5009E85EF /* MaskTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		034619A4201E7088009E85EF /* RNMaskTextFieldDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNMaskTextFieldDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		034619A8201E7088009E85EF /* RNMaskTextFieldDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNMaskTextFieldDemoUITests.swift; sourceTree = "<group>"; };
 		034619AA201E7088009E85EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		034619B7201E70B5009E85EF /* FormTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		034619B8201E70B5009E85EF /* MaskTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		03461987201E7088009E85EF /* RNMaskTextFieldDemo */ = {
 			isa = PBXGroup;
 			children = (
+				034619B6201E70B5009E85EF /* RNMaskTextField */,
 				03461988201E7088009E85EF /* AppDelegate.swift */,
 				0346198A201E7088009E85EF /* ViewController.swift */,
 				0346198C201E7088009E85EF /* Main.storyboard */,
@@ -123,6 +128,16 @@
 				034619AA201E7088009E85EF /* Info.plist */,
 			);
 			path = RNMaskTextFieldDemoUITests;
+			sourceTree = "<group>";
+		};
+		034619B6201E70B5009E85EF /* RNMaskTextField */ = {
+			isa = PBXGroup;
+			children = (
+				034619B7201E70B5009E85EF /* FormTextField.swift */,
+				034619B8201E70B5009E85EF /* MaskTextField.swift */,
+			);
+			name = RNMaskTextField;
+			path = ../../RNMaskTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +275,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0346198B201E7088009E85EF /* ViewController.swift in Sources */,
+				034619B9201E70B5009E85EF /* FormTextField.swift in Sources */,
 				03461989201E7088009E85EF /* AppDelegate.swift in Sources */,
+				034619BA201E70B5009E85EF /* MaskTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

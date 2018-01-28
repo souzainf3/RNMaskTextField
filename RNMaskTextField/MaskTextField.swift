@@ -1,9 +1,9 @@
 //
 //  MaskTextField.swift
-//  GloboPlayTV
+//  RNMaskTextField
 //
 //  Created by Romilson Nunes on 25/01/18.
-//  Copyright © 2018 GLOBO COM. E PART. S/A. All rights reserved.
+//  Copyright © 2018 Romilson Nunes. All rights reserved.
 //
 
 import UIKit
@@ -18,12 +18,12 @@ extension String {
 }
 
 @IBDesignable
-class MaskTextField: UITextField {
+@objc open class MaskTextField: UITextField {
 
-    @IBInspectable var textMask: String = ""
-    @IBInspectable var defaultCharMask = "#"
+    @IBInspectable public var textMask: String = ""
+    @IBInspectable public var defaultCharMask = "#"
     
-    var raw: String? {
+    public var raw: String? {
         set {
             self.text = raw
         }
@@ -32,7 +32,7 @@ class MaskTextField: UITextField {
         }
     }
 
-    func shouldChangeCharacters(in range: NSRange, replacementString string: String) -> Bool {
+    public func shouldChangeCharacters(in range: NSRange, replacementString string: String) -> Bool {
         
         if self.textMask.count == 0 {
             return true
